@@ -24,7 +24,7 @@ namespace IntroCsharpVer2
             // run.RunFor();
             // run.RunWhileWithoutCounter();
             // run.RunArrayAndForEach();
-            // run.RunCallMethod();
+             run.RunSpelTärning();
         }
     }
 }
