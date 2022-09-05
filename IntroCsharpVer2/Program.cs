@@ -9,22 +9,22 @@ namespace IntroCsharpVer2
         static void Main(string[] args)
         {
             // demo är en variabel som kan innehålla ett objekt av klassen Demonstration
-            Demonstration demo;
+            Solution run;
 
             // skapa ett objekt av klassen Demonstration
-            demo = new Demonstration(); 
+            run = new Solution(); 
 
             // anropa metoden RunHelloWord() som finns i klassen Demonstration
-            demo.RunHelloWorld();
-            demo.RunVariable();
-            demo.RunKeyboardInput();
-            demo.RunIf();
-            demo.RunIfElse();
-            demo.RunWhileWithCounter();
-            demo.RunFor();
-            demo.RunWhileWithoutCounter();
-            demo.RunArrayAndForEach();
-            demo.RunCallMethod();
+            // run.RunHelloWorld();
+            // run.RunVariable();
+            // run.RunKeyboardInput();
+            // run.RunIf();
+            // run.RunIfElse();
+            // run.RunWhileWithCounter();
+            // run.RunFor();
+            // run.RunWhileWithoutCounter();
+            // run.RunArrayAndForEach();
+            // run.RunCallMethod();
         }
     }
 }
