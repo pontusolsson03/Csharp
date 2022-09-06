@@ -23,8 +23,8 @@ namespace IntroCsharpVer2
             // run.RunWhileWithCounter();
             // run.RunFor();
             // run.RunWhileWithoutCounter();
-            // run.RunArrayAndForEach();
-             run.RunSpelTärning();
+             run.RunArrayAndForEach();
+           //  run.RunSpelTärning();
         }
     }
 }

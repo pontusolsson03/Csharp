@@ -239,11 +239,10 @@ namespace IntroCsharpVer2
             Console.WriteLine();
             Console.WriteLine();
 
-            foreach (int talet in tal)
-            {
+        }
 
-
-            }
+        public void RunNewArray(Array<int> tal)
+        {
 
         }
     }
