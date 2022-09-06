@@ -12,7 +12,7 @@ namespace IntroCsharpVer2
             Solution run;
 
             // skapa ett objekt av klassen Demonstration
-            run = new Solution(); 
+            run = new Solution();
 
             // anropa metoden RunHelloWord() som finns i klassen Demonstration
             // run.RunHelloWorld();
@@ -23,8 +23,11 @@ namespace IntroCsharpVer2
             // run.RunWhileWithCounter();
             // run.RunFor();
             // run.RunWhileWithoutCounter();
-             run.RunArrayAndForEach();
-           //  run.RunSpelTärning();
+            // run.RunSpelTärning();
+            // run.RunArrayAndForEach();
+            // run.RunMetodDefinition();
+             run.Inköpslista();
+
         }
     }
 }

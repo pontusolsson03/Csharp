@@ -227,21 +227,63 @@ namespace IntroCsharpVer2
 
         public void RunArrayAndForEach()
         {
-
+            
+            int[] arr = { 3, 5, 7, 9, 11, 13 };
             int i = 0;
-            int[] tal = { 3, 5, 7, 9, 11, 13 };
 
-            foreach (int talet in tal)
+            foreach (int tal in arr)
             {
-                Console.WriteLine(talet + ", ");
+                Console.WriteLine(tal + ", ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+
+            foreach (int tal in arr)
+            {
+                arr[i] = arr[i] + 1;
+                i++;
+            }
+
+            foreach (int tal in arr)
+            {
+                Console.WriteLine(tal + ", ");
             }
 
             Console.WriteLine();
             Console.WriteLine();
-
         }
 
-        public void RunNewArray(Array<int> tal)
+
+
+        public void RunMetodDefinition()
+        {
+            Console.WriteLine("Välkommen agent X, ditt uppdrag är...");
+            Console.WriteLine("Vänligen skriv tre tal: ");
+            Console.WriteLine();
+
+            string talEtt = Console.ReadLine();
+            string talTvå = Console.ReadLine();
+            string talTre = Console.ReadLine();
+            int intEtt = Convert.ToInt32(talEtt);
+            int intTvå = Convert.ToInt32(talTvå);
+            int intTre = Convert.ToInt32(talTre);
+
+            int summa = SummaCalc(intEtt, intTvå, intTre);
+            Console.WriteLine("Summan av dina tre tal är...:");
+            Console.WriteLine();
+            Console.WriteLine(summa);
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+        public int SummaCalc(int intEtt, int intTvå, int intTre)
+        {
+            int summa = intEtt + intTvå + intTre;
+            return summa;
+        }
+
+
+
+        public void Inköpslista()
         {
 
         }
