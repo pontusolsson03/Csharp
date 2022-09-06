@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace IntroCsharpVer2
 {
     class Solution
     {
 
-        public void RunHejAda()
+        public void HejAda()
         {
             Console.WriteLine("Hej Ada. Varmt välkommen.");
             Console.WriteLine();
@@ -13,7 +14,7 @@ namespace IntroCsharpVer2
 
 
 
-        public void RunAreaCalculator()
+        public void AreaCalculator()
         {
             double bredd = 9.6;
             double höjd = 5.4;
@@ -27,7 +28,7 @@ namespace IntroCsharpVer2
 
 
 
-        public void RunInputConverter()
+        public void InputConverter()
         {
             Console.WriteLine("Vad är bredden på rektangeln?");
             string breddString = Console.ReadLine();
@@ -47,7 +48,7 @@ namespace IntroCsharpVer2
 
 
 
-        public void RunSummering()
+        public void Summering()
         {
             Console.WriteLine("Var vänlig skriv ditt första tal nu:");
             string firstString = Console.ReadLine();
@@ -60,12 +61,13 @@ namespace IntroCsharpVer2
             double summary = firstDouble + secondDouble;
 
             Console.WriteLine("Summan av dina två tal är " + summary);
+            Console.WriteLine();
 
         }
 
 
 
-        public void RunGissaTalet()
+        public void GissaTalet()
         {
             Console.WriteLine("Gissa mitt favorittal!");
             string gissning = Console.ReadLine();
@@ -80,12 +82,12 @@ namespace IntroCsharpVer2
             {
                 Console.WriteLine("Du gissade fel.");
             }
-
+            Console.WriteLine();
         }
 
 
 
-        public void RunTvåTärningar()
+        public void TvåTärningar()
         {
             Random random = new Random();
             int tärningEtt = random.Next(1, 6);
@@ -104,11 +106,12 @@ namespace IntroCsharpVer2
             {
                 Console.WriteLine("Det blev inte samma, du förlorade.");
             }
+            Console.WriteLine();
         }
 
 
 
-        public void RunWhile()
+        public void While()
         {
             int i = 1;
             while (i < 6)
@@ -141,7 +144,7 @@ namespace IntroCsharpVer2
 
 
 
-        public void RunFor()
+        public void For()
         {
             for (int i = 1; i < 6; i++)
             {
@@ -166,7 +169,7 @@ namespace IntroCsharpVer2
         }
 
 
-        public void RunNewWhile()
+        public void NewWhile()
         {
 
             Console.WriteLine("Gissa på ett nummer mellan 1 och 25!");
@@ -189,7 +192,7 @@ namespace IntroCsharpVer2
 
 
 
-        public void RunSpelTärning()
+        public void SpelTärning()
         {
             Console.WriteLine("Nu kastar vi två tärningar.");
             Console.WriteLine("Om båda blir sexor vinner du storvinst.");
@@ -219,13 +222,13 @@ namespace IntroCsharpVer2
             else
             {
                 Console.WriteLine("Tyvärr, förslust.");
-                Console.WriteLine("");
+                Console.WriteLine();
             }
         }
 
 
 
-        public void RunArrayAndForEach()
+        public void ArrayAndForEach()
         {
             
             int[] arr = { 3, 5, 7, 9, 11, 13 };
@@ -255,7 +258,7 @@ namespace IntroCsharpVer2
 
 
 
-        public void RunMetodDefinition()
+        public void MetodDefinition()
         {
             Console.WriteLine("Välkommen agent X, ditt uppdrag är...");
             Console.WriteLine("Vänligen skriv tre tal: ");
@@ -285,7 +288,32 @@ namespace IntroCsharpVer2
 
         public void Inköpslista()
         {
+            Console.WriteLine("Hallå där! Vad vill du att jag skriver upp på din inköpslista?");
+            Console.WriteLine("När du inte har några fler saker du vill lägga till,");
+            Console.WriteLine("skriv 'klar'.");
+            Console.WriteLine();
 
+            int i = 0;
+            string[] listan = new string[1000];
+            string varan = Console.ReadLine();
+
+            while (varan != "klar")
+            {
+                listan[i] = varan;
+                i++;
+                varan = Console.ReadLine();
+            }
+           
+            Console.WriteLine();
+            foreach (string vara in listan)
+            {
+                if (vara != null)
+                {
+                    Console.WriteLine(vara);
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }
